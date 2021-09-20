@@ -1,0 +1,21 @@
+<!-- <table class="table">
+    <tr *ngFor="let category of categories">
+        <td>{{category.categoryId}}</td>
+        <td>{{category.categoryName}}</td>
+    </tr>
+</table> -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#id</th>
+        <th scope="col">Category Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of categories">
+        <th scope="row">{{category.categoryId}}</th>
+        <td>{{category.categoryName}}</td>
+      </tr>
+    </tbody>
+  </table>
